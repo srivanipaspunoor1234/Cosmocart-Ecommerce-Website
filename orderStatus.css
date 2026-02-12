@@ -1,0 +1,89 @@
+/* ORDER SUCCESS CONTAINER */
+#success-message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    gap: 20px;
+}
+
+/* Circular tick mark */
+#success-message h1 {
+    width: 100px;
+    height: 100px;
+    background-color: #4BB543; /* green background */
+    color: white;
+    border-radius: 50%; /* makes it circular */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.25);
+}
+
+/* Order success message */
+#success-message h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #2f4f4f; /* dark text for clarity */
+}
+
+#home-btn {
+    padding: 12px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #3f7dff, #4fa0ff);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#home-btn:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #2c5acc, #3d7eff);
+}
+
+/* Medium screens */
+@media (max-width: 768px) {
+    #success-message h1 {
+        width: 80px;
+        height: 80px;
+        font-size: 40px;
+    }
+
+    #success-message h2 {
+        font-size: 20px;
+    }
+
+    #home-btn {
+        padding: 10px 22px;
+        font-size: 15px;
+    }
+}
+
+/* Small screens */
+@media (max-width: 480px) {
+    #success-message {
+        margin-top: 60px;
+        gap: 15px;
+        padding: 0 15px;
+    }
+
+    #success-message h1 {
+        width: 60px;
+        height: 60px;
+        font-size: 30px;
+    }
+
+    #success-message h2 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    #home-btn {
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+}

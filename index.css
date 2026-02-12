@@ -1,0 +1,354 @@
+<<<<<<< HEAD
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Body */
+body {
+    background-color: #f5f3ef; /* soft beige */
+}
+
+/* ---------------- NAVBAR ---------------- */
+/* ---------------- NAVBAR ---------------- */
+nav {
+    background: linear-gradient(135deg, #3f7d5b, #5f9c82); /* sage gradient */
+    height: 68px;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 8px 20px rgba(63, 125, 91, 0.35);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+/* Brand */
+nav h1 {
+    color: #fdfcf9;
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    font-style: italic;
+}
+
+/* Menu */
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+/* SEARCH */
+nav input[type="search"] {
+    height: 36px;
+    width: 200px;
+    padding: 0 14px;
+    border-radius: 20px;
+    border: 1.5px solid #cce3d8;
+    outline: none;
+    background-color: #fdfcf9;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+nav input[type="search"]::placeholder {
+    color: #9ca3af;
+}
+
+nav input[type="search"]:focus {
+    border-color: #6b8f9c; /* dusty blue */
+    box-shadow: 0 0 0 3px rgba(107, 143, 156, 0.35);
+}
+
+/* NAV LINKS */
+nav a {
+    text-decoration: none;
+    background-color: rgba(253, 252, 249, 0.9);
+    color: #2f4f4f;
+    padding: 7px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.25s ease;
+}
+
+nav a:hover {
+    background-color: #e6f2ec;
+    transform: translateY(-1px);
+}
+
+/* LOGOUT BUTTON */
+#logout {
+    background: linear-gradient(135deg, #6b8f9c, #8fb3c1);
+    color: #ffffff;
+    padding: 8px 18px;
+    border: none;
+    border-radius: 22px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#logout:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(107, 143, 156, 0.45);
+}
+
+/* ---------------- PRODUCT GRID ---------------- */
+#bg {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    padding: 25px;
+    justify-content: space-between;
+}
+
+/* Remove default anchor styling */
+#bg a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Product card */
+#bg a > div {
+    width: 300px;
+    background-color: #fdfcf9; /* warm card */
+    border-radius: 10px;
+    padding: 14px;
+    border: 1px solid #e4ded7;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+/* Hover */
+#bg a > div:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(63, 125, 91, 0.25);
+}
+
+/* Image */
+#bg img {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+    background-color: #eef4f1; /* sage-beige */
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Title */
+#bg h1 {
+    font-size: 14px;
+    color: #2f3e46;
+    margin-bottom: 6px;
+    height: 36px;
+    overflow: hidden;
+}
+
+/* Description */
+#bg p {
+    font-size: 12px;
+    color: #5f6f73;
+    line-height: 1.4;
+    height: 70px;
+    overflow: hidden;
+    margin-bottom: 8px;
+}
+
+/* Price */
+#bg h2 {
+    font-size: 15px;
+    color: #3f7d5b; /* sage green */
+    margin-bottom: 4px;
+    font-weight: bold;
+}
+
+/* Rating */
+#bg h3 {
+    font-size: 13px;
+    color: #c9a227; /* soft gold */
+}
+
+@media (max-width: 1024px) {
+    #bg {
+        justify-content: center;
+    }
+
+    #bg a > div {
+        width: 280px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        padding: 0 20px;
+    }
+
+    nav input[type="search"] {
+        width: 160px;
+    }
+
+    #bg {
+        justify-content: center;
+        gap: 16px;
+    }
+
+    #bg a > div {
+        width: 260px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 12px;
+        gap: 10px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav input[type="search"] {
+        width: 100%;
+    }
+
+    #bg {
+        padding: 15px;
+        justify-content: center;
+    }
+
+    #bg a > div {
+        width: 100%;
+        max-width: 320px;
+    }
+=======
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #1f2933, #000);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.phone-box {
+  width: 100%;
+  max-width: 380px;
+  background: linear-gradient(145deg, #facc15, #eab308);
+  border-radius: 16px;
+  padding: 20px;
+  border: 5px solid #3f3f46;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.9);
+}
+
+.phone-header {
+  background: linear-gradient(180deg, #4b5563, #1f2933);
+  color: white;
+  text-align: center;
+  padding: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  border-radius: 10px;
+  margin-bottom: 14px;
+}
+
+.screen {
+  background: #020617;
+  color: #22c55e;
+  padding: 14px;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 12px;
+  border: 3px inset #334155;
+}
+
+.label {
+  font-size: 0.75rem;
+  color: #cbd5f5;
+}
+
+#time {
+  font-size: 2rem;
+  letter-spacing: 3px;
+}
+
+.number-display {
+  background: #e5e7eb;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 14px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-align: center;
+  border: 2px inset #6b7280;
+  min-height: 36px;
+}
+
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.keypad button {
+  padding: 14px;
+  font-size: 1rem;
+  font-weight: bold;
+  background: #f9fafb;
+  border-radius: 8px;
+  border: 2px solid #6b7280;
+  cursor: pointer;
+}
+
+.keypad button:active {
+  transform: scale(0.95);
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.controls button {
+  padding: 12px 20px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background: #fde047;
+}
+
+#status {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .phone-box {
+    max-width: 420px;
+  }
+>>>>>>> a8ce337915facdaf71e5b33275e7fd2040d18d66
+}

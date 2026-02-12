@@ -1,0 +1,46 @@
+{
+  "users": [
+    {
+      "id": "d624",
+      "username": "srivani",
+      "email": "srivanipaspunoor@gmail.com",
+      "password": "sri1234"
+    },
+    {
+      "id": "a63c",
+      "username": "maha",
+      "email": "maha@gmail.com",
+      "password": "m1234"
+    },
+    {
+      "id": "0eea",
+      "username": "honey",
+      "email": "honey@gmail.com",
+      "password": "hon1234"
+    },
+    {
+      "id": "d391",
+      "username": "shital",
+      "email": "shital@gmail.com",
+      "password": "shiz1234"
+    },
+    {
+      "id": "9d7b",
+      "username": "anu",
+      "email": "anu@gmail.com",
+      "password": "a1n2u3"
+    },
+    {
+      "id": "d78c",
+      "username": "mythri",
+      "email": "mythri@gmail.com",
+      "password": "my333"
+    },
+    {
+      "id": "5cbc",
+      "username": "maheshwari",
+      "email": "mahi@gmail.com",
+      "password": "mahi123"
+    }
+  ]
+}

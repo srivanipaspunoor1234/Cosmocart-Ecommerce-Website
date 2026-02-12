@@ -1,0 +1,145 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", system-ui, sans-serif;
+}
+
+/* PAGE BACKGROUND */
+body {
+    min-height: 100vh;
+    background: radial-gradient(circle at top, #1e293b, #020617);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* FORM CARD */
+form {
+    background: linear-gradient(180deg, #fefce8, #ffffff);
+    padding: 34px 38px;
+    width: 380px;
+    border-radius: 18px;
+    box-shadow:
+        0 30px 60px rgba(2, 6, 23, 0.6),
+        inset 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+/* LABELS */
+label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #020617;
+}
+
+/* INPUT FIELDS */
+input {
+    width: 100%;
+    padding: 12px 14px;
+    margin-top: 6px;
+    border-radius: 12px;
+    border: 1.5px solid #cbd5f5;
+    font-size: 14px;
+    background-color: #f8fafc;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+/* INPUT FOCUS */
+input:focus {
+    border-color: #d4af37; /* gold */
+    background-color: #ffffff;
+    box-shadow: 0 0 0 4px rgba(212, 175, 55, 0.25);
+}
+
+/* MESSAGE */
+#msg {
+    margin: 12px 0;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* BUTTON */
+button {
+    width: 100%;
+    padding: 13px;
+    margin-top: 14px;
+    background: linear-gradient(135deg, #d4af37, #facc15);
+    color: #020617;
+    border: none;
+    border-radius: 14px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    letter-spacing: 0.4px;
+    transition: all 0.25s ease;
+}
+
+/* BUTTON HOVER */
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgba(250, 204, 21, 0.45);
+}
+
+/* BUTTON ACTIVE */
+button:active {
+    transform: translateY(0);
+    box-shadow: 0 6px 16px rgba(250, 204, 21, 0.35);
+}
+/* Tablet */
+@media (max-width: 768px) {
+    form {
+        width: 90%;
+        padding: 28px 30px;
+    }
+
+    input {
+        padding: 11px 12px;
+        font-size: 13px;
+    }
+
+    button {
+        padding: 12px;
+        font-size: 14px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    body {
+        padding: 20px;
+    }
+
+    form {
+        width: 100%;
+        padding: 24px;
+        border-radius: 16px;
+    }
+
+    label {
+        font-size: 13px;
+    }
+
+    input {
+        padding: 10px 12px;
+        font-size: 13px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 11px;
+    }
+
+    #msg {
+        font-size: 13px;
+    }
+}
+
+/* Very Small Devices */
+@media (max-width: 360px) {
+    form {
+        padding: 20px;
+    }
+}

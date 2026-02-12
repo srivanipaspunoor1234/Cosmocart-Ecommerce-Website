@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Order Status</title>
+  <link rel="stylesheet" href="orderStatus.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div id="success-message">
+    <!-- Tick mark, message, and home button will appear here -->
+  </div>
+
+  <script>
+    let successDiv = document.getElementById("success-message");
+
+    if (localStorage.getItem("orderPlaced") === "true") {
+        // Tick mark
+        let tick = document.createElement("h1");
+        tick.innerHTML = '<i class="fa-solid fa-check"></i>';
+        tick.classList.add("tick-icon");
+        successDiv.appendChild(tick);
+
+        // Success message
+        let msg = document.createElement("h2");
+        msg.textContent = "Order Placed Successfully!";
+        msg.classList.add("success-msg");
+        successDiv.appendChild(msg);
+
+        // Home button
+        let homeBtn = document.createElement("button");
+        homeBtn.textContent = "Home";
+        homeBtn.id = "home-btn";
+        successDiv.appendChild(homeBtn);
+
+        homeBtn.onclick = () => {
+            window.location.href = "index.html"; // redirect to homepage
+        }
+
+        // Clear the orderPlaced flag
+        localStorage.removeItem("orderPlaced");
+
+    } else {
+        // If someone opens this page directly
+        successDiv.textContent = "No recent order.";
+        successDiv.style.fontSize = "20px";
+        successDiv.style.color = "#555";
+    }
+  </script>
+</body>
+</html>
